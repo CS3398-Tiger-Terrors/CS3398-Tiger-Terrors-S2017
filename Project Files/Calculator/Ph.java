@@ -2,14 +2,14 @@ package Calculator;
 
 /**
  * Created by calumklesel on 2/27/17.
- * v1.01
+ * v1.02
  */
 public class Ph extends Calculator {
     private double currPh;
     private int pool_volume;
     private boolean sodaAsh;
     private boolean dryAcid;
-    private double amtNeeded; // Amount needed in fl oz
+    private double amtNeeded; // Amount needed in fl oz is multiplied the volumeFactor
     private double volumeFactor; // volumeFactor is dependent upon the pool volume
     private double totalAmount; // Total amount to add of the chemical to get the desired pH
 
@@ -27,10 +27,11 @@ public class Ph extends Calculator {
     // Only calculates accurately for a current pH that is at least 6.8 or no greater than 8.4,
     // but will suggest a value for levels that are not within that range.
     // In order to know which chemical to add call the getDryAcid() or getSodaAsh() methods.
-    // In order to know how much to add call the getTotalAmount() method.
-    public void calcPh() {
+    // Returns the total amount needed to add to get the target pH. (ie totalAmount)
+    public double calcPh() {
         calcAmtNeeded();
         totalAmount = amtNeeded * volumeFactor;
+        return totalAmount;
     }
 
     // Getter and setters.
@@ -41,9 +42,7 @@ public class Ph extends Calculator {
     }
 
     @Override
-    public void setPool_volume(int pool_volume) {
-        this.pool_volume = pool_volume;
-    }
+    public void setPool_volume(int pool_volume) { this.pool_volume = pool_volume; }
 
     public double getTotalAmount() {
         return totalAmount;

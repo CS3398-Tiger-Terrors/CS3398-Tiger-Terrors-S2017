@@ -2,7 +2,7 @@ package Calculator;
 
 /**
  * Created by calumklesel on 2/26/17.
- * v1.01
+ * v1.02
  */
 
 public class Calculator {
@@ -12,7 +12,7 @@ public class Calculator {
     private double alkAmount;
     private double currChl; // chlorine measured in ppm
     private double chlAmount;
-    private double currCyAcid;
+    private double currCyAcid; // Conditioner/Cyanuric Acid levels measured in ppm
     private double cyAcidAmount;
     private double currHard;
     private double hardAmount;
@@ -207,8 +207,7 @@ public class Calculator {
     // Calculate and return the desired amount of chemicals to add to gain the ideal pH.
     public double calc_ph() {
         Ph phObject = new Ph(currPh, pool_volume);
-        phObject.calc_ph();
-        phAmount = phObject.getTotalAmount();
+        phAmount = phObject.calc_ph();
         return phAmount;
     }
 }
