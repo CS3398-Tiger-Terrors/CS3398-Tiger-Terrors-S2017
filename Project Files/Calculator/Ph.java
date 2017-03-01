@@ -2,7 +2,7 @@ package Calculator;
 
 /**
  * Created by calumklesel on 2/27/17.
- * v1.02
+ * v1.03
  */
 public class Ph extends Calculator {
     private double currPh;
@@ -20,7 +20,7 @@ public class Ph extends Calculator {
         amtNeeded = 0;
         sodaAsh = false;
         dryAcid = false;
-        volumeFactor = Calculator.calc_volumeFactor(pool_volume);
+        volumeFactor = Calculator.calcVolumeFactor(pool_volume);
         totalAmount = 0;
     }
 
@@ -28,6 +28,7 @@ public class Ph extends Calculator {
     // but will suggest a value for levels that are not within that range.
     // In order to know which chemical to add call the getDryAcid() or getSodaAsh() methods.
     // Returns the total amount needed to add to get the target pH. (ie totalAmount)
+    @Override
     public double calcPh() {
         calcAmtNeeded();
         totalAmount = amtNeeded * volumeFactor;

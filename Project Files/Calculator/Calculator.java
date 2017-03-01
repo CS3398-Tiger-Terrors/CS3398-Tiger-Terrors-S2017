@@ -2,7 +2,7 @@ package Calculator;
 
 /**
  * Created by calumklesel on 2/26/17.
- * v1.02
+ * v1.03
  */
 
 public class Calculator {
@@ -41,7 +41,7 @@ public class Calculator {
         this.currHard = currHard;
         this.currPh = currPh;
         this.pool_volume = pool_volume;
-        calc_volumeFactor();
+        calcVolumeFactor();
     }
 
     // Used instead of the other constructors when the pool volume is not known
@@ -53,8 +53,8 @@ public class Calculator {
         this.currCyAcid = currCyAcid;
         this.currHard = currHard;
         this.currPh = currPh;
-        this.pool_volume = calc_pool_volume(length, width, height, shape);
-        calc_volumeFactor();
+        this.pool_volume = calcPoolVolume(length, width, height, shape);
+        calcVolumeFactor();
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -110,55 +110,11 @@ public class Calculator {
     }
 
     public void setPool_volume(int length, int width, int height, String shape) {
-        pool_volume = calc_pool_volume(length, width,height, shape);
+        pool_volume = calcPoolVolume(length, width,height, shape);
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Static Methods for calculating values without creating an object of the calculator class. Can be used if one
-    // needs to calculate a single a few chemical levels without having to make a whole calculator object.
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/*    public static double calc_alk(double currAlk, int pool_volume) {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_alk() {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_chl(double currChl, int pool_volume) {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_chl() {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_c_acid(double currCyAcid, int pool_volume) {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_c_acid() {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_hard(double currHard, int pool_volume) {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_hard() {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_ph(double currPh, int pool_volume) {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }
-
-    public static double calc_ph() {
-        return 0; //FIXME CALCULATIONS DONE HERE
-    }*/
-
-    public static int calc_pool_volume(int length, int width, int height, String shape) {
+    // Static method to calculate the pool volume from anywhere
+    public static int calcPoolVolume(int length, int width, int height, String shape) {
         double multiplier = 0;
         switch (shape) {
             case "rectangle":
@@ -176,11 +132,12 @@ public class Calculator {
         return (int) (length * width * height * multiplier);
     }
 
-    public static int calc_volumeFactor(int pool_volume) {
+    // Static method to calculate the volumeFactor from anywhere
+    public static int calcVolumeFactor(int pool_volume) {
         return (pool_volume / 10000);
     }
 
-    private void calc_volumeFactor() {
+    private void calcVolumeFactor() {
         volumeFactor = pool_volume / 10000;
     }
 
@@ -188,26 +145,26 @@ public class Calculator {
     // Methods for calculating the chemical values
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public double calc_alk() {
+    public double calcAlkalinity() {
         return 0; //FIXME CALCULATIONS DONE HERE
     }
 
-    public double calc_chl() {
+    public double calcChlorine() {
         return 0; //FIXME CALCULATIONS DONE HERE
     }
 
-    public double calc_c_acid() {
+    public double calcCyAcid() {
         return 0; //FIXME CALCULATIONS DONE HERE
     }
 
-    public double calc_hard() {
+    public double calcHardness() {
         return 0; //FIXME CALCULATIONS DONE HERE
     }
 
     // Calculate and return the desired amount of chemicals to add to gain the ideal pH.
-    public double calc_ph() {
+    public double calcPh() {
         Ph phObject = new Ph(currPh, pool_volume);
-        phAmount = phObject.calc_ph();
+        phAmount = phObject.calcPh();
         return phAmount;
     }
 }

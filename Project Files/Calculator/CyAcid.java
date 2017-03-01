@@ -2,7 +2,7 @@ package Calculator;
 
 /**
  * Created by calumklesel on 2/27/17.
- * v1.00
+ * v1.01
  */
 public class CyAcid extends Calculator {
 
@@ -15,7 +15,7 @@ public class CyAcid extends Calculator {
     public CyAcid(double currCyAcid, int pool_volume) {
         this.currCyAcid = currCyAcid;
         this.pool_volume = pool_volume;
-        volumeFactor = Calculator.calc_volumeFactor(pool_volume);
+        volumeFactor = Calculator.calcVolumeFactor(pool_volume);
     }
 
     public double calcCyAcid() {
@@ -26,94 +26,94 @@ public class CyAcid extends Calculator {
             String cyAcidString = Double.toString(currCyAcid);
             switch (cyAcidString) {
                 case "0":
-                    totalAmount = volumeFactor * 30;
+                    totalAmount = (volumeFactor * amtNeeded) * 30;
                     break;
                 case "1":
-                    totalAmount = volumeFactor * 29;
+                    totalAmount = (volumeFactor * amtNeeded) * 29;
                     break;
                 case "2":
-                    totalAmount = volumeFactor * 28;
+                    totalAmount = (volumeFactor * amtNeeded) * 28;
                     break;
                 case "3":
-                    totalAmount = volumeFactor * 27;
+                    totalAmount = (volumeFactor * amtNeeded) * 27;
                     break;
                 case "4":
-                    totalAmount = volumeFactor * 26;
+                    totalAmount = (volumeFactor * amtNeeded) * 26;
                     break;
                 case "5":
-                    totalAmount = volumeFactor * 25;
+                    totalAmount = (volumeFactor * amtNeeded) * 25;
                     break;
                 case "6":
-                    totalAmount = volumeFactor * 24;
+                    totalAmount = (volumeFactor * amtNeeded) * 24;
                     break;
                 case "7":
-                    totalAmount = volumeFactor * 23;
+                    totalAmount = (volumeFactor * amtNeeded) * 23;
                     break;
                 case "8":
-                    totalAmount = volumeFactor * 22;
+                    totalAmount = (volumeFactor * amtNeeded) * 22;
                     break;
                 case "9":
-                    totalAmount = volumeFactor * 21;
+                    totalAmount = (volumeFactor * amtNeeded) * 21;
                     break;
                 case "10":
-                    totalAmount = volumeFactor * 20;
+                    totalAmount = (volumeFactor * amtNeeded) * 20;
                     break;
                 case "11":
-                    totalAmount = volumeFactor * 19;
+                    totalAmount = (volumeFactor * amtNeeded) * 19;
                     break;
                 case "12":
-                    totalAmount = volumeFactor * 18;
+                    totalAmount = (volumeFactor * amtNeeded) * 18;
                     break;
                 case "13":
-                    totalAmount = volumeFactor * 17;
+                    totalAmount = (volumeFactor * amtNeeded) * 17;
                     break;
                 case "14":
-                    totalAmount = volumeFactor * 16;
+                    totalAmount = (volumeFactor * amtNeeded) * 16;
                     break;
                 case "15":
-                    totalAmount = volumeFactor * 15;
+                    totalAmount = (volumeFactor * amtNeeded) * 15;
                     break;
                 case "16":
-                    totalAmount = volumeFactor * 14;
+                    totalAmount = (volumeFactor * amtNeeded) * 14;
                     break;
                 case "17":
-                    totalAmount = volumeFactor * 13;
+                    totalAmount = (volumeFactor * amtNeeded) * 13;
                     break;
                 case "18":
-                    totalAmount = volumeFactor * 12;
+                    totalAmount = (volumeFactor * amtNeeded) * 12;
                     break;
                 case "19":
-                    totalAmount = volumeFactor * 11;
+                    totalAmount = (volumeFactor * amtNeeded) * 11;
                     break;
                 case "20":
-                    totalAmount = volumeFactor * 10;
+                    totalAmount = (volumeFactor * amtNeeded) * 10;
                     break;
                 case "21":
-                    totalAmount = volumeFactor * 9;
+                    totalAmount = (volumeFactor * amtNeeded) * 9;
                     break;
                 case "22":
-                    totalAmount = volumeFactor * 8;
+                    totalAmount = (volumeFactor * amtNeeded) * 8;
                     break;
                 case "23":
-                    totalAmount = volumeFactor * 7;
+                    totalAmount = (volumeFactor * amtNeeded) * 7;
                     break;
                 case "24":
-                    totalAmount = volumeFactor * 6;
+                    totalAmount = (volumeFactor * amtNeeded) * 6;
                     break;
                 case "25":
-                    totalAmount = volumeFactor * 5;
+                    totalAmount = (volumeFactor * amtNeeded) * 5;
                     break;
                 case "26":
-                    totalAmount = volumeFactor * 4;
+                    totalAmount = (volumeFactor * amtNeeded) * 4;
                     break;
                 case "27":
-                    totalAmount = volumeFactor * 3;
+                    totalAmount = (volumeFactor * amtNeeded) * 3;
                     break;
                 case "28":
-                    totalAmount = volumeFactor * 2;
+                    totalAmount = (volumeFactor * amtNeeded) * 2;
                     break;
                 case "29":
-                    totalAmount = volumeFactor * 1;
+                    totalAmount = (volumeFactor * amtNeeded) * 1;
                     break;
             }
             return totalAmount;
