@@ -10,14 +10,19 @@ public class Calculator {
     // Member variables that end with amount are the final amount to add to get to a desired range of the attribute.
     private double currAlk;
     private double alkAmount;
+    private double alkAdj;  // 1 if we're raising (bicarb), 0 if we're lowering or staying the same
     private double currChl; // chlorine measured in ppm
-    private double chlAmount;
+    private double chlAmountDi; // amount of diChlor needed
+    private double chlAmountTri; // amount of triChlor needed
+    private double chlAmountLiq; // amount of liquid chlorine needed
     private double currCyAcid; // Conditioner/Cyanuric Acid levels measured in ppm
     private double cyAcidAmount;
     private double currHard;
     private double hardAmount;
     private double currPh;
-    private double phAmount;
+    private double phAmountDry;
+    private double phAmountWet;
+    private double phAmountAsh;
     private int pool_volume; // volume measured in gallons
     private int volumeFactor; // volumeFactor is dependent upon the pool volume
 
@@ -145,26 +150,39 @@ public class Calculator {
     // Methods for calculating the chemical values
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public double calcAlkalinity() {
-        return 0; //FIXME CALCULATIONS DONE HERE
+    public double calcAlkalinity(){
+        Alkalinity alkObject = new Alkalinity(currAlk, pool_volume);
+        alkAmount = alkObject.calcAlkalinity();
+        alkAdjust = alkObject.getBicarb();
+        return alkAmount;
     }
 
-    public double calcChlorine() {
-        return 0; //FIXME CALCULATIONS DONE HERE
+    public void calcChlorine() {
+        Chlorine chlObject = new Chlorine(currChl, pool_volume);
+        chlObject.calcChlorine();
+        chlAmountDi = chlObject.getDiNeed();
+        chlAmountTri = chlObject.getTriNeed();
+        chlAmountLiq = chlObject.getLiqNeed();
     }
 
     public double calcCyAcid() {
-        return 0; //FIXME CALCULATIONS DONE HERE
+        cyAcid cyObject = new cyAcid(currCyAcid, pool_volume);
+        cyAcidAmount = cyObject.calcCyAcid();
+        return cyAcidAmount;
     }
 
     public double calcHardness() {
-        return 0; //FIXME CALCULATIONS DONE HERE
+        Hardness hardObject = new Hardness(currHard, pool_volume);
+        hardAmount = hardObject.calcHardness();
+        return hardAmount;
     }
 
     // Calculate and return the desired amount of chemicals to add to gain the ideal pH.
-    public double calcPh() {
+    public static calcPh() {
         Ph phObject = new Ph(currPh, pool_volume);
-        phAmount = phObject.calcPh();
-        return phAmount;
+        phObject.calcPh();
+        phAmountDry = phObject.getAmtNeededDry();
+        phAmountWet = phObject.getAmtNeededWet();
+        phAmountAsh = phObject.getAmtNeededAsh();
     }
 }

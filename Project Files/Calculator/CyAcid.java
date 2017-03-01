@@ -10,7 +10,7 @@ public class CyAcid extends Calculator {
     private double currCyAcid;
     private int pool_volume;
     private double volumeFactor; // volumeFactor is dependent upon the pool volume
-    private double totalAmount;
+    private double totalAmount = 0;
 
     public CyAcid(double currCyAcid, int pool_volume) {
         this.currCyAcid = currCyAcid;
@@ -23,7 +23,8 @@ public class CyAcid extends Calculator {
             return totalAmount;
         }
         else if(currCyAcid < 30) {
-            String cyAcidString = Double.toString(currCyAcid);
+            totalAmount = (volumeFactor * amtNeeded * (30 - currCyAcid));
+            /*String cyAcidString = Double.toString(currCyAcid);         //Used math to remove need to run a switch
             switch (cyAcidString) {
                 case "0":
                     totalAmount = (volumeFactor * amtNeeded) * 30;
@@ -115,7 +116,7 @@ public class CyAcid extends Calculator {
                 case "29":
                     totalAmount = (volumeFactor * amtNeeded) * 1;
                     break;
-            }
+            }*/
             return totalAmount;
         }
         totalAmount = -1;
