@@ -1,8 +1,10 @@
-package Calculator;
+package tigerterrors.sprint2app.calculator;
 
 /**
- * Created by calumklesel on 2/26/17.
+ * Created by Calum Klesel on 2/26/17.
  * v1.03
+ * Updated by Calum Klesel on 4/05/17.
+ * v1.04
  */
 
 public class Calculator {
@@ -10,7 +12,7 @@ public class Calculator {
     // Member variables that end with amount are the final amount to add to get to a desired range of the attribute.
     private double currAlk;
     private double alkAmount;
-    private double alkAdj;  // 1 if we're raising (bicarb), 0 if we're lowering or staying the same
+    private boolean alkAdj;  // 1 if we're raising (bicarb), 0 if we're lowering or staying the same
     private double currChl; // chlorine measured in ppm
     private double chlAmountDi; // amount of diChlor needed
     private double chlAmountTri; // amount of triChlor needed
@@ -153,20 +155,25 @@ public class Calculator {
     public double calcAlkalinity(){
         Alkalinity alkObject = new Alkalinity(currAlk, pool_volume);
         alkAmount = alkObject.calcAlkalinity();
-        alkAdjust = alkObject.getBicarb();
+        alkAdj = alkObject.getBicarb();
         return alkAmount;
     }
 
-    public void calcChlorine() {
+    public double[] calcChlorine() {
         Chlorine chlObject = new Chlorine(currChl, pool_volume);
-        chlObject.calcChlorine();
+        chlObject.calculateChlorine();
         chlAmountDi = chlObject.getDiNeed();
         chlAmountTri = chlObject.getTriNeed();
         chlAmountLiq = chlObject.getLiqNeed();
+        double [] chlAmountArr = new double [3];
+        chlAmountArr[0] = chlAmountDi;
+        chlAmountArr[1] = chlAmountTri;
+        chlAmountArr[2] = chlAmountLiq;
+        return chlAmountArr;
     }
 
     public double calcCyAcid() {
-        cyAcid cyObject = new cyAcid(currCyAcid, pool_volume);
+        CyAcid cyObject = new CyAcid(currCyAcid, pool_volume);
         cyAcidAmount = cyObject.calcCyAcid();
         return cyAcidAmount;
     }
@@ -178,11 +185,18 @@ public class Calculator {
     }
 
     // Calculate and return the desired amount of chemicals to add to gain the ideal pH.
-    public static calcPh() {
+    // The array that is returned holds the amount needed of Dry, Wet, and Ash in index 0, 1, and
+    // 2 respectively.
+    public double[] calcPh() {
         Ph phObject = new Ph(currPh, pool_volume);
         phObject.calcPh();
         phAmountDry = phObject.getAmtNeededDry();
         phAmountWet = phObject.getAmtNeededWet();
         phAmountAsh = phObject.getAmtNeededAsh();
+        double[] phArray = new double[3];
+        phArray[0] = phAmountDry;
+        phArray[1] = phAmountWet;
+        phArray[2] = phAmountAsh;
+        return phArray;
     }
 }

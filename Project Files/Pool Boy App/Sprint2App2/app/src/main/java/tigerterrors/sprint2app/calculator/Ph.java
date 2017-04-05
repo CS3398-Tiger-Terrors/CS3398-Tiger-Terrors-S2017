@@ -1,17 +1,20 @@
-package Calculator;
+package tigerterrors.sprint2app.calculator;
 
 /**
- * Created by calumklesel on 2/27/17.
+ * Created by Calum Klesel on 2/27/17.
  * v1.03
+ * Updated by Calum Klesel on 4/05/17.
+ * v1.04
  */
+
 public class Ph extends Calculator {
     private double currPh;
     private int pool_volume;
     private boolean sodaAsh;
     private boolean dryAcid;
     private double amtNeededDry; // Amount dry acid needed in fl oz is multiplied the volumeFactor
-    private double amtNeededWet; // Amound wet acid
-    private double amtneededAsh; // Amount soda ash needed
+    private double amtNeededWet; // Amount wet acid
+    private double amtNeededAsh; // Amount soda ash needed
     private double volumeFactor; // volumeFactor is dependent upon the pool volume
     private double totalAmount; // Total amount to add of the chemical to get the desired pH
 
@@ -19,7 +22,9 @@ public class Ph extends Calculator {
     public Ph(double currPh, int pool_volume) {
         this.currPh = Math.floor(currPh * 10) / 10;  //gets rid of any part of the number outside X.X
         this.pool_volume = pool_volume;
-        amtNeededDry = amtneededWet = amtNeededAsh = 0.0;
+        amtNeededDry = 0.0;
+        amtNeededWet = 0.0;
+        amtNeededAsh = 0.0;
         sodaAsh = false;
         dryAcid = false;
         volumeFactor = Calculator.calcVolumeFactor(pool_volume);
@@ -30,10 +35,10 @@ public class Ph extends Calculator {
     // but will suggest a value for levels that are not within that range.
     // In order to know which chemical to add call the getDryAcid() or getSodaAsh() methods.
     // Returns the total amount needed to add to get the target pH. (ie totalAmount)
-    @Override
-    public void calcPh() {
-        calcAmtNeeded();
-    }
+    //@Override
+    //public void calcPh() {
+    //    calcAmtNeeded();
+    //}
 
     // Getter and setters.
     // Note: not able to get or set values other than currPh, pool_volume, totalAmount, sodaAsh, and dryAcid.

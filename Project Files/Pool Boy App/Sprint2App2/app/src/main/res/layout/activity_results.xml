@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="tigerterrors.sprint2app.ResultsActivity"
+    android:id="@+id/activity_results">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/results_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amounts_needed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/alkalinity_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/results_display"
+            android:layout_marginTop="15dp"
+            android:text="@string/alkalinity_display" />
+
+        <TextView
+            android:id="@+id/alkalinity_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/alkalinity_display"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/alkalinity_display" />
+
+        <TextView
+            android:id="@+id/chlorine_di"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chlorine_display"
+            android:text="@string/chlorine_di" />
+
+        <TextView
+            android:id="@+id/chlorine0_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chlorine_di"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/chlorine_di" />
+
+        <TextView
+            android:id="@+id/chlorine_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/alkalinity_display"
+            android:layout_marginTop="19dp"
+            android:text="@string/chlorine_display" />
+
+        <TextView
+            android:id="@+id/chlorine_tri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chlorine_di"
+            android:text="@string/chlorine_tri" />
+
+        <TextView
+            android:id="@+id/chlorine1_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chlorine0_amount"
+            android:layout_toEndOf="@+id/chlorine0_amount" />
+
+        <TextView
+            android:id="@+id/chlorine_liquid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chlorine_tri"
+            android:text="@string/chlorine_liquid" />
+
+        <TextView
+            android:id="@+id/chlorine2_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chlorine1_amount"
+            android:layout_toEndOf="@+id/chlorine1_amount" />
+
+        <TextView
+            android:id="@+id/cyanuric_acid_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chlorine_liquid"
+            android:layout_marginTop="16dp"
+            android:text="@string/cyanuric_acid" />
+
+        <TextView
+            android:id="@+id/cy_acid_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cyanuric_acid_display"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/cyanuric_acid_display" />
+
+        <TextView
+            android:id="@+id/hardness_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/alkalinity_display"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cyanuric_acid_display"
+            android:layout_marginTop="15dp"
+            android:text="@string/hardness_display" />
+
+        <TextView
+            android:id="@+id/hardness_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hardness_display"
+            android:layout_alignStart="@+id/alkalinity_amount" />
+
+        <TextView
+            android:id="@+id/ph_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/hardness_display"
+            android:layout_marginTop="15dp"
+            android:text="For pH, add one of the following:" />
+
+        <TextView
+            android:id="@+id/ph_soda_ash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ph_display"
+            android:text="Soda Ash:" />
+
+        <TextView
+            android:id="@+id/ph_muriatic_acid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ph_soda_ash"
+            android:text="Muriatic Acid:" />
+
+        <TextView
+            android:id="@+id/ph_dry_acid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ph_muriatic_acid"
+            android:text="Dry Acid:" />
+
+        <TextView
+            android:id="@+id/ph2_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cy_acid_amount"
+            android:layout_below="@+id/ph_display" />
+
+        <TextView
+            android:id="@+id/ph1_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ph2_amount"
+            android:layout_below="@+id/ph2_amount" />
+
+        <TextView
+            android:id="@+id/ph0_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ph1_amount"
+            android:layout_below="@+id/ph1_amount" />
+
+        <TextView
+            android:id="@+id/salt_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ph_dry_acid"
+            android:layout_marginTop="16dp"
+            android:text="Salt:"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/chlorine_liquid" />
+
+        <TextView
+            android:id="@+id/salt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/salt_display"
+            android:layout_toEndOf="@+id/salt_display" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

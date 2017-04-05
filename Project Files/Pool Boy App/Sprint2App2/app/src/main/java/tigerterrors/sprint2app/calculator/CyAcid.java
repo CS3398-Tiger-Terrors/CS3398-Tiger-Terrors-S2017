@@ -1,8 +1,10 @@
-package Calculator;
+package tigerterrors.sprint2app.calculator;
 
 /**
- * Created by calumklesel on 2/27/17.
+ * Created by Calum Klesel on 2/27/17.
  * v1.01
+ * Updated by Calum Klesel on 4/05/17.
+ * v1.02
  */
 public class CyAcid extends Calculator {
 

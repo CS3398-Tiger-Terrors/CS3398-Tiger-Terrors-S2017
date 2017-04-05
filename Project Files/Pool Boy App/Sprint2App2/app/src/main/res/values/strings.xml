@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Sprint2App</string>
+    <string name="alkalinityCurrent" />
+    <string name="chlorineCurrent" />
+    <string name="cyanuricAcidCurrent" />
+    <string name="hardnessCurrent" />
+    <string name="phCurrent" />
+    <string name="saltCurrent" />
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="amounts_needed">Amounts Needed</string>
+    <string name="chlorine_tri">Trichlor:</string>
+    <string name="chlorine_di">Dichlor:</string>
+    <string name="alkalinity_display">For Alkalinity, add Bicarb to raise\n and Muriatic Acid to lower:</string>
+    <string name="chlorine_display">For Chlorine, add either Dichlor, Trichlor, or Liquid Chlorine</string>
+    <string name="hardness_display">For Hardness add the following\n in 100% Calcium Chloride:</string>
+    <string name="cyanuric_acid">Cyanuric Acid:</string>
+    <string name="chlorine_liquid">Liquid:</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nwarr.myfirstapplication.MainActivity">
+    <!-- This line above will be different on your machine -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:id="@+id/phText"
+        android:hint="@string/phI"
+        android:layout_below="@+id/chlorText"
+        android:layout_alignStart="@+id/chlorText"
+        android:layout_alignLeft="@+id/chlorText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/alkText"
+        android:hint="@string/alkalinityI"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/phText"
+        android:layout_alignStart="@+id/phText"
+        android:layout_alignLeft="@+id/phText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/cyanText"
+        android:layout_marginTop="18dp"
+        android:hint="@string/cyanic_acidI"
+        android:layout_below="@+id/alkText"
+        android:layout_alignStart="@+id/alkText"
+        android:layout_alignLeft="@+id/alkText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="21dp"
+        android:id="@+id/hardText"
+        android:hint="@string/hardnessI"
+        android:layout_below="@+id/cyanText"
+        android:layout_alignStart="@+id/cyanText"
+        android:layout_alignLeft="@+id/cyanText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/chlorText"
+        android:hint="@string/chlorineI"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:text="@string/calkulat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calkulate"
+        style="@style/Widget.AppCompat.Button"
+        android:elevation="4dp"
+        android:visibility="visible"
+        android:layout_below="@+id/hardText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:onClick="CALKULAT"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+
