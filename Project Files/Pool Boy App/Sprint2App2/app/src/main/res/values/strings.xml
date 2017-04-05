@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sprint2App</string>
+    <string name="alkalinityCurrent" />
+    <string name="chlorineCurrent" />
+    <string name="cyanuricAcidCurrent" />
+    <string name="hardnessCurrent" />
+    <string name="phCurrent" />
+    <string name="saltCurrent" />
+    <string name="title_activity_results">ResultsActivity</string>
+</resources>
