@@ -44,6 +44,7 @@ public class Alkalinity extends Calculator {
     @Override
     public double calcAlkalinity() {
         double alkAdjustment = currAlk;
+        this.calcAmtNeeded();
         if(muriaticAcid){
             while(alkAdjustment > 100.9){
                 totalAmount += (amtNeeded * volumeFactor);

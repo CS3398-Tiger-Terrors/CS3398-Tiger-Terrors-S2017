@@ -42,8 +42,7 @@ public class Chlorine extends Calculator {
         //dichlor = false;
     }
 
-    @Override
-    public void calcChlorine() {
+    public void calculateChlorine() {
         if(currChl < 3) {
             diNeed = (2.15 * volumeFactor * (3-currChl));
             triNeed = (1.5 * volumeFactor * (3-currChl));

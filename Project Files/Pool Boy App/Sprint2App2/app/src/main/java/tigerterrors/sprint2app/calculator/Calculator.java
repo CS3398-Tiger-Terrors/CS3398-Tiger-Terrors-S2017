@@ -161,14 +161,14 @@ public class Calculator {
 
     public double[] calcChlorine() {
         Chlorine chlObject = new Chlorine(currChl, pool_volume);
-        chlObject.calcChlorine();
+        chlObject.calculateChlorine();
         chlAmountDi = chlObject.getDiNeed();
         chlAmountTri = chlObject.getTriNeed();
         chlAmountLiq = chlObject.getLiqNeed();
         double [] chlAmountArr = new double [3];
-        chlAmountArr[1] = chlAmountDi;
-        chlAmountArr[2] = chlAmountTri;
-        chlAmountArr[3] = chlAmountLiq;
+        chlAmountArr[0] = chlAmountDi;
+        chlAmountArr[1] = chlAmountTri;
+        chlAmountArr[2] = chlAmountLiq;
         return chlAmountArr;
     }
 
