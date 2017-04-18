@@ -1,11 +1,15 @@
 # Development Branch for Pool Boy App
-– an Android Pool Expense Management System with Calculator
-
-# Description:
 Most up to date iteration of our app files are located here.
 
-# Technology:
+# Description:
+An Android Pool Chemical Calculator with Expense Management/Inventory System
 
-o Languages: Java
+# Technology:
+o Languages: Java, xml, Gradle
 
 o IDE: Android Studio https://developer.android.com/studio/intro/index.html
+
+# Navigation:
+Wiki contains research elements related to the app's functionality. 
+Images-for-chem-calc's branch contains the documentation for the chemical calculations that the app implements. 
+Other branches are local development branches from team members' local machines. 
