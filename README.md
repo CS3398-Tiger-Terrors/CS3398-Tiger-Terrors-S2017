@@ -13,7 +13,7 @@ For getting the volume of the pool, there are VERY simple calculations that we c
 
 # Technology:
 
-o Languages: Java
+o Languages: Java, xml, Gradle
 
 o IDE: Android Studio https://developer.android.com/studio/intro/index.html
 
