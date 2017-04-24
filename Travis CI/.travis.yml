@@ -37,4 +37,4 @@ before_script:
 
 script:
  
-- ./RecipeAssistant/gradlew build
+- gradlew build
