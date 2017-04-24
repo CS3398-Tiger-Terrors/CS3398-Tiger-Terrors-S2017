@@ -1,6 +1,5 @@
 package com.example.nwarr.pooldimpg2;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,13 +13,12 @@ public class PoolDim2 extends AppCompatActivity {
     EditText ed1;
     Button b1;
 
-    SharedPreferences sharedpreferences = getSharedPreferences(MyPref, Context.MODE_PRIVATE);
+    SharedPreferences sharedpreferences = getSharedPreferences(Dimen, 0);
     SharedPreferences.Editor edits = sharedpreferences.edit();
 
-    public static final String MyPref = "Pref";
     public static final String Dimen = "SavedDim";
 
-    public float getprefs = sharedpreferences.getFloat(Dimen, 0);
+    String getDim = sharedpreferences.getString("SavedDim", "");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,18 +28,16 @@ public class PoolDim2 extends AppCompatActivity {
         ed1=(EditText)findViewById(R.id.editText);
         b1=(Button)findViewById(R.id.button);
 
+        getDim =  ed1.getText().toString();
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                float Dim;
-                String str =  ed1.getText().toString();
-                Dim = Float.parseFloat(str);
-                getprefs = 0;
-
-                edits.putFloat(Dimen, Dim);
-
-                edits.apply();
+                edits.clear();
+                edits.putString("SavedDim", getDim);
+                edits.commit();
             }
         });
     }
 }
+
