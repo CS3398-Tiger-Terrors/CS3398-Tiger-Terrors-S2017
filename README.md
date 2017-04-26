@@ -17,6 +17,9 @@ o Languages: Java, xml, Gradle
 
 o IDE: Android Studio https://developer.android.com/studio/intro/index.html
 
+# Java Code
+https://github.com/CS3398-Tiger-Terrors/CS3398-Tiger-Terrors-S2017/blob/Leo's-Research-Branch/PoolBoy/app/src/main/java/com/example/leosc/poolboy/MainActivity.java
+
 # Advantages:
 
 o Builds Discipline and Organization
