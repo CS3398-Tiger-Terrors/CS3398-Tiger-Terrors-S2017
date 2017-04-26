@@ -1,0 +1,7 @@
+#Wed Apr 26 15:27:46 CDT 2017
+base.0=C\:\\Users\\leosc\\AndroidStudioProjects\\PoolBoy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_353ab766cfdd5c590c8522bbbdfce2f8fd215592
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\leosc\\AndroidStudioProjects\\PoolBoy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_25271a8cb6a007fb1bf9f1f01d94fd4a5c88f367\\classes.dex
+base.1=C\:\\Users\\leosc\\AndroidStudioProjects\\PoolBoy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_25271a8cb6a007fb1bf9f1f01d94fd4a5c88f367
+file.0=C\:\\Users\\leosc\\AndroidStudioProjects\\PoolBoy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_353ab766cfdd5c590c8522bbbdfce2f8fd215592\\classes.dex

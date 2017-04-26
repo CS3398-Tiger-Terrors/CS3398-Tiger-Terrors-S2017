@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\leosc\AndroidStudioProjects\PoolBoy\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="967c4973d3103b544c3f5eae341d35e814c8800b">
+        <dex dex="C:\Users\leosc\AndroidStudioProjects\PoolBoy\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_25271a8cb6a007fb1bf9f1f01d94fd4a5c88f367\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\leosc\AndroidStudioProjects\PoolBoy\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\leosc\AndroidStudioProjects\PoolBoy\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_353ab766cfdd5c590c8522bbbdfce2f8fd215592\classes.dex" />
+    </item>
+
+</items>

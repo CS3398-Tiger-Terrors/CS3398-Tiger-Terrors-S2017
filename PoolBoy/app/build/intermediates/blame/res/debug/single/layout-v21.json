@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\leosc\\AndroidStudioProjects\\PoolBoy\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\leosc\\.android\\build-cache\\6650345f6e29b6489b98cde2de138c731b195b87\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\leosc\\AndroidStudioProjects\\PoolBoy\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\leosc\\.android\\build-cache\\6650345f6e29b6489b98cde2de138c731b195b87\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\leosc\\AndroidStudioProjects\\PoolBoy\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\leosc\\.android\\build-cache\\6650345f6e29b6489b98cde2de138c731b195b87\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\leosc\\AndroidStudioProjects\\PoolBoy\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\leosc\\.android\\build-cache\\6650345f6e29b6489b98cde2de138c731b195b87\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]
