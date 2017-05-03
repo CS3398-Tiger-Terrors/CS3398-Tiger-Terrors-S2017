@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/Ponno/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/.externalNativeBuild/cmake/release/x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/Ponno/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/.externalNativeBuild/cmake/release/x86_64 --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/Ponno/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/Ponno/Library/Android/sdk/ndk-bundle/platforms/android-23/arch-x86_64  -Dnative_lib_EXPORTS -isystem /Users/Ponno/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/Ponno/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/include -isystem /Users/Ponno/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/.externalNativeBuild/cmake/release/x86_64"
+				}
+			],
+			"output" : "/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/cmake/release/obj/x86_64/libnative-lib.so",
+			"toolchain" : "5731675108672529635"
+		}
+	},
+	"toolchains" : 
+	{
+		"5731675108672529635" : 
+		{
+			"cCompilerExecutable" : "/Users/Ponno/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/Ponno/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

@@ -1,0 +1,3 @@
+/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-lib.dir

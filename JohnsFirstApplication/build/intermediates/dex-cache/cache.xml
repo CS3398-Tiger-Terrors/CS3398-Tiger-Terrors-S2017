@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/cb38cad7279a1ae8448352610a51e85c57320f05/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_3cedbdb56d1868a4dd63886145c34e5a9b6d151e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/5ec55ed2aca138d8d8594dc7166ba5ddb13ba1f5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_ed346a61ad9e9f3ccb3bfbe0c00fec41194b3b26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/363ce2823dd8add57df149c3140f8e01364b0c1d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_8dae8cd48017994bb01ec41170260dbf0eafe692.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/54721c18c0da15ded891aafbfd2609b371bef519/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_122633a6220e99bd3cdfc8cf23205f691857a232.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/935857faa0cfed9fbb63396161471681eea0570f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_d4dc3b5bf799910c5bbccc61ead5729c52c75f02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_8b3b84084576f1694b1dcdf8539437a7c8c4d362.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/e6bc4878952f54446ec9634851922e4678ad8dd0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_08e11a42f28d03d0a5ffefb31b5bb48fa645380c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/1825eedbcecf199f10e1974a810989de505e660b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_8c127253c052e1017d8fa0747211ac0fac5e20fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/9ef843f2da4543471a3c3047c20219d854e80e24/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_a81a0b25b7378c06f0798516b5b82e1f85e8245d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_83eb8329f4786de72418c9344544b5d54e5e4e58/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b5d4cd753424594b12c32cb3cd34806553a83b09">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_93a388a39b42b5cbd32ef77d364c16c9ee5d09cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/603322c0b181027b3d25511f41c323fd1ce3b1f3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_2ce83f2b55b51968beaca7db0f9b2a821ddab9fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/31505548027aaa71a14ea568d32dbb5094d99ca2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_866bc1f47118d1df593ff67fd9723665a276febb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/850a5f19af945737c529f1e290f29f41c3e3709e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_9dabf08399c7200b961e14eecf6d6b4670e94b77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/6162ea0c0da57b045e4c8348e20ee84db272f419/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_fcae0786fad41fd490d664daf64c1a26baf7178d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/.android/build-cache/f7c6fd9d0bcab7405171f0e8128eb6073215e029/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/classes_75e17a327fb6089343ec2dd2c16fef0e71219143.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Ponno/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/Ponno/CS3398-Tiger-Terrors-S2017/JohnsFirstApplication/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_1101ba9ffe78c4a9a47fc42ad43f3fc65de5a6cc.jar" />
+    </item>
+
+</items>

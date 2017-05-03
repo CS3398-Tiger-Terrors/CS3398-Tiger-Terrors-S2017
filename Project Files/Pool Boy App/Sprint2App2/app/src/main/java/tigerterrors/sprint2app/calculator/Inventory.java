@@ -10,8 +10,8 @@ this class is not currently functional.
 I do not understand the workings of the actual app code/activities well enough to dive into them
 and what I'm researching says I would need to edit these to get it functional.
 I do not want to do this before I speak with the team, instead of risking bricking their code.
- */
-
+  */
+/*
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -153,3 +153,5 @@ public class Inventory {
         return inventory;
     }
 }
+
+*/
